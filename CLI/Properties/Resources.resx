@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorArchiveFound" xml:space="preserve">
+    <value>Archive path "{0}" found, not marked for overwrite</value>
+  </data>
+  <data name="ErrorArchiveNotFound" xml:space="preserve">
+    <value>Archive path "{0}" not found</value>
+  </data>
+  <data name="ErrorInvalidKeyword" xml:space="preserve">
+    <value>Keyword "{0}" invalid</value>
+  </data>
+  <data name="ErrorInvalidKeywordValue" xml:space="preserve">
+    <value>Keyword "{0}" value "{1}" invalid</value>
+  </data>
+  <data name="ErrorInvalidVerb" xml:space="preserve">
+    <value>Verb "{0}" invalid</value>
+  </data>
+  <data name="ErrorSourceNotFound" xml:space="preserve">
+    <value>Source path "{0}" not found</value>
+  </data>
+  <data name="ErrorTargetFound" xml:space="preserve">
+    <value>Target path "{0}" found, not marked for overwrite</value>
+  </data>
+  <data name="ExceptionArgument" xml:space="preserve">
+    <value>Argument exception: Archive, source, or taget path contains invalid characters</value>
+  </data>
+  <data name="ExceptionArgumentNull" xml:space="preserve">
+    <value>Argument null exception: Archive, source, or target path is null</value>
+  </data>
+  <data name="ExceptionDirectoryNotFound" xml:space="preserve">
+    <value>Directory not found exception: Source or target directory not found</value>
+  </data>
+  <data name="ExceptionFileNotFound" xml:space="preserve">
+    <value>File not found exception: Source or target file  not found </value>
+  </data>
+  <data name="ExceptionGeneral" xml:space="preserve">
+    <value>General exception: 
+{0} </value>
+  </data>
+  <data name="ExceptionInvalidData" xml:space="preserve">
+    <value>Invalid data exception: Invalid or unsupported archive file format </value>
+  </data>
+  <data name="ExceptionIO" xml:space="preserve">
+    <value>IO exception: An input file could not be opened, an output file already existed</value>
+  </data>
+  <data name="ExceptionNotSupported" xml:space="preserve">
+    <value>Not supported exception: Invalid archive format or does not support writing</value>
+  </data>
+  <data name="ExceptionPathTooLong" xml:space="preserve">
+    <value>Path too long exception: Archive, source, or taget path is too long</value>
+  </data>
+  <data name="ExceptionUnauthorizedAccess" xml:space="preserve">
+    <value>Unauthorized access exception: The caller does not have access to the archive, source or target path</value>
+  </data>
+  <data name="HelpHelp" xml:space="preserve">
+    <value>ZipArchive help syntax: 
+  ZipArchive -Help -&lt;verb&gt; 
+ 
+    &lt;verb&gt; -List    Help on listing the files in a zip archive 
+           -Unzip   Help on unzipping the files from an archive into 
+                    a directory 
+           -Zip     Help on zipping the files in a directory into an archive</value>
+  </data>
+  <data name="HelpList" xml:space="preserve">
+    <value>ZipArchive list syntax: 
+  ZipArchive -List -archive &lt;archive file path&gt; 
+                   -noShort | -short
+                   -stats | -nostats 
+  
+    -archive  - Archive file path 
+    -a  
+  
+    -short    - Display names only. Default is -noShort
+    -sh
+    -noShort  
+    -nsh
+  
+    -stats    - Display statistics. Default is -stats  
+    -st
+    -noStats 
+    -nst</value>
+  </data>
+  <data name="HelpUnzipDir" xml:space="preserve">
+    <value>ZipArchive unzip directory syntax: 
+  ZipArchive -UnzipDir -archive &lt;archive file path&gt; 
+                    -target &lt;source directory path&gt; 
+                    -noOverwriteTarget | -overwriteTarget
+                    -stats | -nostats  
+ 
+    -archive          - Archive file path 
+    -a  
+    
+    -target           - Target directory path
+    -t 
+     
+    -overwriteTarget  - Overwrite target directory if existent. Default is -NoOverwriteTarget
+    -ot
+    -noOverwriteTarget
+    -not
+  
+    -stats            - Display statistics. Default  is -stats
+    -st  
+    -noStats  
+    -nst</value>
+  </data>
+  <data name="HelpVerb" xml:space="preserve">
+    <value>ZipArchive general syntax: 
+  ZipArchive -&lt;verb&gt; &lt;verb-specific parameters&gt; &lt;common parameters&gt; 
+   
+    &lt;verb&gt; - -Help   General help for this command 
+             -List   List the files in a zip archive 
+             -UnzipDir   Unzip the files from an archive into a directory 
+             -ZipDir  Zip the files in a directory into an archive 
+   </value>
+  </data>
+  <data name="HelpZipDir" xml:space="preserve">
+    <value>ZipArchive zip directory syntax: 
+  ZipArchive -ZipDir -archive &lt;archive file path&gt; 
+                  -source &lt;source directory path&gt; 
+                  -compressionLevel &lt;Optimal |  Fastest | NoCompression&gt; 
+                  -includeBase | -noIncludeBase
+                  -noOverwriteArchive | -overwriteArchive
+                  -stats | -nostats
+ 
+    -archive          - Archive file path
+    -a 
+    
+    -source           - Source directory path
+    -s
+    
+    -compressionLevel - Compression level. Default is Optimal
+    -cl
+    
+    -includeBase      - Include base directory in archive. Default is -includeBase
+    -ib
+    -noIncludeBase    
+    -nib
+   
+    -overwriteArchive - Overwrite archive file if existent. Default is -noOverwriteArchive
+    -oa
+    -noOverwriteArchive 
+    -noa
+  
+    -stats            - Display statistics, Default is -stats  
+    -st
+    -noStats  
+    -nst</value>
+  </data>
+  <data name="KeyArchive" xml:space="preserve">
+    <value>-archive</value>
+  </data>
+  <data name="KeyCompressionLevel" xml:space="preserve">
+    <value>-compressionLevel</value>
+  </data>
+  <data name="KeyHelp" xml:space="preserve">
+    <value>-help</value>
+  </data>
+  <data name="KeyHelp_" xml:space="preserve">
+    <value>-?</value>
+  </data>
+  <data name="KeyIncludeBase" xml:space="preserve">
+    <value>-includeBase</value>
+  </data>
+  <data name="KeyOverwriteArchive" xml:space="preserve">
+    <value>-overwriteArchive</value>
+  </data>
+  <data name="KeyOverwriteTarget" xml:space="preserve">
+    <value>-overwriteTarget</value>
+  </data>
+  <data name="KeyShort" xml:space="preserve">
+    <value>-short</value>
+  </data>
+  <data name="KeySource" xml:space="preserve">
+    <value>-source</value>
+  </data>
+  <data name="KeyTarget" xml:space="preserve">
+    <value>-target</value>
+  </data>
+  <data name="VerbHelp" xml:space="preserve">
+    <value>-Help</value>
+  </data>
+  <data name="VerbHelp_" xml:space="preserve">
+    <value>-?</value>
+  </data>
+  <data name="VerbList" xml:space="preserve">
+    <value>-List</value>
+  </data>
+  <data name="VerbUnzipDir" xml:space="preserve">
+    <value>-UnzipDir</value>
+  </data>
+  <data name="VerbZipDir" xml:space="preserve">
+    <value>-ZipDir</value>
+  </data>
+  <data name="KeyArchive_" xml:space="preserve">
+    <value>-a</value>
+  </data>
+  <data name="KeyCompressionLevel_" xml:space="preserve">
+    <value>-cl</value>
+  </data>
+  <data name="KeyIncludeBase_" xml:space="preserve">
+    <value>-ib</value>
+  </data>
+  <data name="KeyNoIncludeBase" xml:space="preserve">
+    <value>-noIncludeBase</value>
+  </data>
+  <data name="KeyNoIncludeBase_" xml:space="preserve">
+    <value>-nib</value>
+  </data>
+  <data name="KeyNoOverwriteArchive" xml:space="preserve">
+    <value>-noOverwriteArchive</value>
+  </data>
+  <data name="KeyNoOverwriteArchive_" xml:space="preserve">
+    <value>-noa</value>
+  </data>
+  <data name="KeyNoOverwriteTarget" xml:space="preserve">
+    <value>-noOverwriteTarget</value>
+  </data>
+  <data name="KeyNoOverwriteTarget_" xml:space="preserve">
+    <value>-not</value>
+  </data>
+  <data name="KeyNoShort" xml:space="preserve">
+    <value>-noShort</value>
+  </data>
+  <data name="KeyNoShort_" xml:space="preserve">
+    <value>-nsh</value>
+  </data>
+  <data name="KeyNoStats" xml:space="preserve">
+    <value>-noStats</value>
+  </data>
+  <data name="KeyNoStats_" xml:space="preserve">
+    <value>-nst</value>
+  </data>
+  <data name="KeyOverwriteArchive_" xml:space="preserve">
+    <value>-oa</value>
+  </data>
+  <data name="KeyOverwriteTarget_" xml:space="preserve">
+    <value>-ot</value>
+  </data>
+  <data name="KeyShort_" xml:space="preserve">
+    <value>-sh</value>
+  </data>
+  <data name="KeySource_" xml:space="preserve">
+    <value>-s</value>
+  </data>
+  <data name="KeyStats" xml:space="preserve">
+    <value>-stats</value>
+  </data>
+  <data name="KeyStats_" xml:space="preserve">
+    <value>-st</value>
+  </data>
+  <data name="KeyTarget_" xml:space="preserve">
+    <value>-t</value>
+  </data>
+  <data name="FormatB" xml:space="preserve">
+    <value> bytes</value>
+  </data>
+  <data name="FormatGB" xml:space="preserve">
+    <value> GB</value>
+  </data>
+  <data name="FormatKB" xml:space="preserve">
+    <value> KB</value>
+  </data>
+  <data name="FormatMB" xml:space="preserve">
+    <value> MB</value>
+  </data>
+  <data name="FormatStats" xml:space="preserve">
+    <value>{0} files of {1}, {2} compression, {3} elapsed</value>
+  </data>
+  <data name="KeyFile" xml:space="preserve">
+    <value>-file</value>
+  </data>
+  <data name="KeyFile_" xml:space="preserve">
+    <value>-f</value>
+  </data>
+  <data name="VerbZipFile" xml:space="preserve">
+    <value>-ZipFile</value>
+  </data>
+  <data name="VerbDeleteEntry" xml:space="preserve">
+    <value>-DeleteEntry</value>
+  </data>
+  <data name="HelpZipFile" xml:space="preserve">
+    <value>ZipArchive zip file syntax:</value>
+  </data>
+  <data name="HelpDeleteEntry" xml:space="preserve">
+    <value>ZipArchive delete entry syntax:</value>
+  </data>
+  <data name="KeyAllowDuplicate" xml:space="preserve">
+    <value>-allowDuplicate</value>
+  </data>
+  <data name="KeyAllowDuplicate_" xml:space="preserve">
+    <value>-ad</value>
+  </data>
+  <data name="KeyEntry" xml:space="preserve">
+    <value>-entry</value>
+  </data>
+  <data name="KeyEntry_" xml:space="preserve">
+    <value>-e</value>
+  </data>
+  <data name="KeyNoAllowDuplicate" xml:space="preserve">
+    <value>-noAllowDuplicate</value>
+  </data>
+  <data name="KeyNoAllowDuplicate_" xml:space="preserve">
+    <value>-nad</value>
+  </data>
+  <data name="VerbUnzipFile" xml:space="preserve">
+    <value>-UnzipFile</value>
+  </data>
+  <data name="ErrorEntryFound" xml:space="preserve">
+    <value>Entry "{0}" found. not marked to allow duplicate </value>
+  </data>
+  <data name="ErrorEntryNotFound" xml:space="preserve">
+    <value>Entry "{0}" not found</value>
+  </data>
+  <data name="HelpListEntry" xml:space="preserve">
+    <value>ZipArchive list entry syntax:</value>
+  </data>
+  <data name="HelpUnzipFile" xml:space="preserve">
+    <value>ZipArchive unzip file syntax:</value>
+  </data>
+  <data name="VerbListEntry" xml:space="preserve">
+    <value>-ListEntry</value>
+  </data>
+</root>
