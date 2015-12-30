@@ -170,19 +170,29 @@
     <value>Unauthorized access exception: The caller does not have access to the archive, source or target path</value>
   </data>
   <data name="HelpHelp" xml:space="preserve">
-    <value>ZipArchive help syntax: 
-  ZipArchive -Help -&lt;verb&gt; 
+    <value>ZArcCLI help syntax: 
+  ZArcCLI -Help -&lt;verb&gt; 
  
-    &lt;verb&gt; -List    Help on listing the files in a zip archive 
-           -Unzip   Help on unzipping the files from an archive into 
-                    a directory 
-           -Zip     Help on zipping the files in a directory into an archive</value>
+    &lt;verb&gt; -DeleteEntry  Help on deleting an archive entry 
+           -Help         Help 
+           -List         Help on listing the files in an archive 
+           -ListEntry    Help on listing a specific archive entry   
+           -UnzipDir     Help on unzipping an archive into a directory
+           -UnzipFile    Help on unzipping a specfic archive entry into 
+                         a file  
+           -ZipDir       Help on zipping a directory into an archive
+           -ZipFile      Help on zipping a fiile into a specific archive
+                         entry</value>
   </data>
   <data name="HelpList" xml:space="preserve">
-    <value>ZipArchive list syntax: 
-  ZipArchive -List -archive &lt;archive file path&gt; 
-                   -noShort | -short
-                   -stats | -nostats 
+    <value>ZArcCLI list syntax: 
+  ZArcCLI -List -help 
+                -archive &lt;archive file path&gt; 
+                -noShort | -short
+                -stats | -nostats 
+  
+    -help     - Display verb-specific heelp
+    -? 
   
     -archive  - Archive file path 
     -a  
@@ -198,19 +208,23 @@
     -nst</value>
   </data>
   <data name="HelpUnzipDir" xml:space="preserve">
-    <value>ZipArchive unzip directory syntax: 
-  ZipArchive -UnzipDir -archive &lt;archive file path&gt; 
+    <value>ZArcCLI unzip directory syntax: 
+  ZArcCLI -UnzipDir -help
+                    -archive &lt;archive file path&gt; 
                     -target &lt;source directory path&gt; 
                     -noOverwriteTarget | -overwriteTarget
                     -stats | -nostats  
  
+    -help             - Display verb-specific help
+    -?
+
     -archive          - Archive file path 
     -a  
     
     -target           - Target directory path
     -t 
      
-    -overwriteTarget  - Overwrite target directory if existent. Default is -NoOverwriteTarget
+    -overwriteTarget  - Overwrite target directory if existent. Default is -noOverwriteTarget
     -ot
     -noOverwriteTarget
     -not
@@ -218,27 +232,34 @@
     -stats            - Display statistics. Default  is -stats
     -st  
     -noStats  
-    -nst</value>
+    -ns</value>
   </data>
   <data name="HelpVerb" xml:space="preserve">
-    <value>ZipArchive general syntax: 
-  ZipArchive -&lt;verb&gt; &lt;verb-specific parameters&gt; &lt;common parameters&gt; 
-   
-    &lt;verb&gt; - -Help   General help for this command 
-             -List   List the files in a zip archive 
-             -UnzipDir   Unzip the files from an archive into a directory 
-             -ZipDir  Zip the files in a directory into an archive 
-   </value>
+    <value>ZArcCLI general syntax: 
+  ZArcCLI -&lt;verb&gt; &lt;verb-specific parameters&gt; 
+
+    &lt;verb&gt; -DeleteEntry  Delete an archive entry 
+           -Help         Help 
+           -List         List the files in an archive 
+           -ListEntry    List a specific archive entry   
+           -UnzipDir     Unzip an archive into a directory
+           -UnzipFile    Unzip a specfic archive entry into a file  
+           -ZipDir       Zip a directory into an archive
+           -ZipFile      Zip a fiile into a specific archive entry</value>
   </data>
   <data name="HelpZipDir" xml:space="preserve">
-    <value>ZipArchive zip directory syntax: 
-  ZipArchive -ZipDir -archive &lt;archive file path&gt; 
+    <value>ZArcCLI zip directory syntax: 
+  ZArcCLI -ZipDir -help
+                  -archive &lt;archive file path&gt; 
                   -source &lt;source directory path&gt; 
                   -compressionLevel &lt;Optimal |  Fastest | NoCompression&gt; 
                   -includeBase | -noIncludeBase
                   -noOverwriteArchive | -overwriteArchive
                   -stats | -nostats
  
+    -help             - Display verb-specific help
+    -?
+
     -archive          - Archive file path
     -a 
     
@@ -383,12 +404,6 @@
   <data name="FormatStats" xml:space="preserve">
     <value>{0} files of {1}, {2} compression, {3} elapsed</value>
   </data>
-  <data name="KeyFile" xml:space="preserve">
-    <value>-file</value>
-  </data>
-  <data name="KeyFile_" xml:space="preserve">
-    <value>-f</value>
-  </data>
   <data name="VerbZipFile" xml:space="preserve">
     <value>-ZipFile</value>
   </data>
@@ -396,10 +411,60 @@
     <value>-DeleteEntry</value>
   </data>
   <data name="HelpZipFile" xml:space="preserve">
-    <value>ZipArchive zip file syntax:</value>
+    <value>ZArcCLI zip file syntax: 
+  ZArcCLI -ZipFile -help
+                   -archive &lt;archive file path&gt; 
+                   -entry &lt;archive entry relative path&gt;
+                   -source &lt;source path &amp; file&gt; 
+                   -compressionLevel &lt;Optimal |  Fastest | NoCompression&gt; 
+                   -noOverwriteArchive | -overwriteArchive
+                   -stats | -nostats
+ 
+    -help             - Display verb-specific help
+    -?
+
+    -archive          - Archive file path
+    -a 
+     
+    -entry            - Archive entry relative path
+    -e                  
+      
+    -source           - Source path and file 
+    -s
+    
+    -compressionLevel - Compression level. Default is Optimal
+    -cl
+    
+    -allowDuplicate   - Allow duplicate archive entry. Default is -noAllowDuplicate
+    -ad
+    -noAllowDuplicate 
+    -nad
+  
+    -stats            - Display statistics, Default is -stats  
+    -st
+    -noStats  
+    -nst</value>
   </data>
   <data name="HelpDeleteEntry" xml:space="preserve">
-    <value>ZipArchive delete entry syntax:</value>
+    <value>ZArcCLI delete entry syntax: 
+  ZArcCLI -DeleteEntry -help
+                       -archive &lt;archive file path&gt;
+                       -entry &lt;archive entry relative path&gt;
+                       -stats | -nostats 
+
+    -help     - Display verb-specific help
+    -?
+    
+    -archive  - Archive file path 
+    -a  
+  
+    -entry            - Archive entry relative path
+    -e 
+     
+    -stats    - Display statistics. Default is -stats  
+    -st
+    -noStats 
+    -nst</value>
   </data>
   <data name="KeyAllowDuplicate" xml:space="preserve">
     <value>-allowDuplicate</value>
@@ -429,12 +494,76 @@
     <value>Entry "{0}" not found</value>
   </data>
   <data name="HelpListEntry" xml:space="preserve">
-    <value>ZipArchive list entry syntax:</value>
+    <value>ZArcCLI list entry syntax: 
+  ZArcCLI -ListEntry -help
+                     -archive &lt;archive file path&gt;
+                     -entry &lt;archive entry relative path&gt;
+                     -noShort | -short
+                     -stats | -nostats 
+
+    -help     - Display verb-specific help
+    -?
+    
+    -archive  - Archive file path 
+    -a  
+  
+    -entry            - Archive entry relative path
+    -e 
+     
+    -short    - Display names only. Default is -noShort
+    -sh
+    -noShort  
+    -nsh
+  
+    -stats    - Display statistics. Default is -stats  
+    -st
+    -noStats 
+    -nst</value>
   </data>
   <data name="HelpUnzipFile" xml:space="preserve">
-    <value>ZipArchive unzip file syntax:</value>
+    <value>ZArcCLI unzip file syntax: 
+  ZArcCLI -UnzipFile -help
+                     -archive &lt;archive file path&gt;
+                     -entry &lt;archive entry relative path&gt; 
+                     -target &lt;target path &amp; file&gt; 
+                     -noOverwriteTarget | -overwriteTarget
+                     -stats | -nostats  
+ 
+    -help             - Display verb-specific help
+    -?
+
+    -archive          - Archive file path 
+    -a  
+
+    -entry            - Archive entry relative path
+    -e 
+     
+    -target           - Target path and file
+    -t 
+     
+    -overwriteTarget  - Overwrite target file if existent. Default is -noOverwriteTarget
+    -ot
+    -noOverwriteTarget
+    -not
+  
+    -stats            - Display statistics. Default  is -stats
+    -st  
+    -noStats  
+    -nst</value>
   </data>
   <data name="VerbListEntry" xml:space="preserve">
     <value>-ListEntry</value>
+  </data>
+  <data name="KeyFilter" xml:space="preserve">
+    <value>-filter</value>
+  </data>
+  <data name="KeyFilter_" xml:space="preserve">
+    <value>-f</value>
+  </data>
+  <data name="KeyNoRegex" xml:space="preserve">
+    <value>-noregex</value>
+  </data>
+  <data name="KeyRegex" xml:space="preserve">
+    <value>-regex</value>
   </data>
 </root>

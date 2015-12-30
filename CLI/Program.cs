@@ -438,6 +438,12 @@
           {
             switch ( value )
             {
+              case DeleteEntryKey.help:
+                {
+                  rc = 0;
+                }
+                break;
+
               case DeleteEntryKey.archive:
                 {
                   if ( ix < args.Length )
@@ -578,7 +584,7 @@
       }
       else
       {
-        Console.Error.WriteLine ( Properties.Resources.HelpUnzipDir );
+        Console.Error.WriteLine ( Properties.Resources.HelpDeleteEntry );
         rc = -1;
       }
       return rc;
@@ -707,6 +713,11 @@
           {
             switch ( value )
             {
+              case ListKey.help:
+                {
+                  rc = 0;
+                }
+                break;
               case ListKey.archive:
                 {
                   if ( ix < args.Length )
@@ -880,6 +891,11 @@
           {
             switch ( value )
             {
+              case ListEntryKey.help:
+                {
+                  rc = 0;
+                }
+                break;
               case ListEntryKey.archive:
                 {
                   if ( ix < args.Length )
@@ -1079,6 +1095,12 @@
           {
             switch ( value )
             {
+              case UnzipDirKey.help:
+                {
+                  rc = 0;
+                }
+                break;
+
               case UnzipDirKey.archive:
                 {
                   if ( ix < args.Length )
@@ -1262,6 +1284,12 @@
           {
             switch ( value )
             {
+              case UnzipFileKey.help:
+                {
+                  rc = 0;
+                }
+                break;
+
               case UnzipFileKey.archive:
                 {
                   if ( ix < args.Length )
@@ -1448,7 +1476,7 @@
       }
       else
       {
-        Console.Error.WriteLine ( Properties.Resources.HelpUnzipDir );
+        Console.Error.WriteLine ( Properties.Resources.HelpUnzipFile );
         rc = -1;
       }
       return rc;
@@ -1477,6 +1505,12 @@
           {
             switch ( value )
             {
+              case ZipDirKey.help:
+                {
+                  rc = 0;
+                }
+                break;
+
               case ZipDirKey.archive:
                 {
                   if ( ix < args.Length )
@@ -1701,6 +1735,12 @@
           {
             switch ( value )
             {
+              case ZipFileKey.help:
+                {
+                  rc = 0;
+                }
+                break;
+
               case ZipFileKey.archive:
                 {
                   if ( ix < args.Length )
@@ -1938,7 +1978,7 @@
       }
       else
       {
-        Console.Error.WriteLine ( Properties.Resources.HelpUnzipDir );
+        Console.Error.WriteLine ( Properties.Resources.HelpZipFile );
         rc = -1;
       }
       return rc;

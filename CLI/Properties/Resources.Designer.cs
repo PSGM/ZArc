@@ -278,7 +278,25 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive delete entry syntax:.
+        ///   Looks up a localized string similar to ZArcCLI delete entry syntax: 
+        ///  ZArcCLI -DeleteEntry -help
+        ///                       -archive &lt;archive file path&gt;
+        ///                       -entry &lt;archive entry relative path&gt;
+        ///                       -stats | -nostats 
+        ///
+        ///    -help     - Display verb-specific help
+        ///    -?
+        ///    
+        ///    -archive  - Archive file path 
+        ///    -a  
+        ///  
+        ///    -entry            - Archive entry relative path
+        ///    -e 
+        ///     
+        ///    -stats    - Display statistics. Default is -stats  
+        ///    -st
+        ///    -noStats 
+        ///    -nst.
         /// </summary>
         public static string HelpDeleteEntry {
             get {
@@ -287,13 +305,17 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive help syntax: 
-        ///  ZipArchive -Help -&lt;verb&gt; 
+        ///   Looks up a localized string similar to ZArcCLI help syntax: 
+        ///  ZArcCLI -Help -&lt;verb&gt; 
         /// 
-        ///    &lt;verb&gt; -List    Help on listing the files in a zip archive 
-        ///           -Unzip   Help on unzipping the files from an archive into 
-        ///                    a directory 
-        ///           -Zip     Help on zipping the files in a directory into an archive.
+        ///    &lt;verb&gt; -DeleteEntry  Help on deleting an archive entry 
+        ///           -Help         Help 
+        ///           -List         Help on listing the files in an archive 
+        ///           -ListEntry    Help on listing a specific archive entry   
+        ///           -UnzipDir     Help on unzipping an archive into a directory
+        ///           -UnzipFile    Help on unzipping a specfic archive entry into 
+        ///                         a file  
+        ///           -ZipDir       Help on zipping a direct [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HelpHelp {
             get {
@@ -302,10 +324,14 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive list syntax: 
-        ///  ZipArchive -List -archive &lt;archive file path&gt; 
-        ///                   -noShort | -short
-        ///                   -stats | -nostats 
+        ///   Looks up a localized string similar to ZArcCLI list syntax: 
+        ///  ZArcCLI -List -help 
+        ///                -archive &lt;archive file path&gt; 
+        ///                -noShort | -short
+        ///                -stats | -nostats 
+        ///  
+        ///    -help     - Display verb-specific heelp
+        ///    -? 
         ///  
         ///    -archive  - Archive file path 
         ///    -a  
@@ -327,7 +353,26 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive list entry syntax:.
+        ///   Looks up a localized string similar to ZArcCLI list entry syntax: 
+        ///  ZArcCLI -ListEntry -help
+        ///                     -archive &lt;archive file path&gt;
+        ///                     -entry &lt;archive entry relative path&gt;
+        ///                     -noShort | -short
+        ///                     -stats | -nostats 
+        ///
+        ///    -help     - Display verb-specific help
+        ///    -?
+        ///    
+        ///    -archive  - Archive file path 
+        ///    -a  
+        ///  
+        ///    -entry            - Archive entry relative path
+        ///    -e 
+        ///     
+        ///    -short    - Display names only. Default is -noShort
+        ///    -sh
+        ///    -noShort  
+        ///    [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HelpListEntry {
             get {
@@ -336,23 +381,23 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive unzip directory syntax: 
-        ///  ZipArchive -UnzipDir -archive &lt;archive file path&gt; 
+        ///   Looks up a localized string similar to ZArcCLI unzip directory syntax: 
+        ///  ZArcCLI -UnzipDir -help
+        ///                    -archive &lt;archive file path&gt; 
         ///                    -target &lt;source directory path&gt; 
         ///                    -noOverwriteTarget | -overwriteTarget
         ///                    -stats | -nostats  
         /// 
+        ///    -help             - Display verb-specific help
+        ///    -?
+        ///
         ///    -archive          - Archive file path 
         ///    -a  
         ///    
         ///    -target           - Target directory path
         ///    -t 
         ///     
-        ///    -overwriteTarget  - Overwrite target directory if existent. Default is -NoOverwriteTarget
-        ///    -ot
-        ///    -noOverwriteTarget
-        ///    -not
-        ///          /// [rest of string was truncated]&quot;;.
+        ///    -overwriteTarget  - Overwrite target directory if exis [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HelpUnzipDir {
             get {
@@ -361,7 +406,24 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive unzip file syntax:.
+        ///   Looks up a localized string similar to ZArcCLI unzip file syntax: 
+        ///  ZArcCLI -UnzipFile -help
+        ///                     -archive &lt;archive file path&gt;
+        ///                     -entry &lt;archive entry relative path&gt; 
+        ///                     -target &lt;target path &amp; file&gt; 
+        ///                     -noOverwriteTarget | -overwriteTarget
+        ///                     -stats | -nostats  
+        /// 
+        ///    -help             - Display verb-specific help
+        ///    -?
+        ///
+        ///    -archive          - Archive file path 
+        ///    -a  
+        ///
+        ///    -entry            - Archive entry relative path
+        ///    -e 
+        ///     
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HelpUnzipFile {
             get {
@@ -370,14 +432,17 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive general syntax: 
-        ///  ZipArchive -&lt;verb&gt; &lt;verb-specific parameters&gt; &lt;common parameters&gt; 
-        ///   
-        ///    &lt;verb&gt; - -Help   General help for this command 
-        ///             -List   List the files in a zip archive 
-        ///             -UnzipDir   Unzip the files from an archive into a directory 
-        ///             -ZipDir  Zip the files in a directory into an archive 
-        ///   .
+        ///   Looks up a localized string similar to ZArcCLI general syntax: 
+        ///  ZArcCLI -&lt;verb&gt; &lt;verb-specific parameters&gt; 
+        ///
+        ///    &lt;verb&gt; -DeleteEntry  Delete an archive entry 
+        ///           -Help         Help 
+        ///           -List         List the files in an archive 
+        ///           -ListEntry    List a specific archive entry   
+        ///           -UnzipDir     Unzip an archive into a directory
+        ///           -UnzipFile    Unzip a specfic archive entry into a file  
+        ///           -ZipDir       Zip a directory into an archive
+        ///           -ZipFile      Zip a fiile into a specifi [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HelpVerb {
             get {
@@ -386,21 +451,22 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive zip directory syntax: 
-        ///  ZipArchive -ZipDir -archive &lt;archive file path&gt; 
+        ///   Looks up a localized string similar to ZArcCLI zip directory syntax: 
+        ///  ZArcCLI -ZipDir -help
+        ///                  -archive &lt;archive file path&gt; 
         ///                  -source &lt;source directory path&gt; 
         ///                  -compressionLevel &lt;Optimal |  Fastest | NoCompression&gt; 
         ///                  -includeBase | -noIncludeBase
         ///                  -noOverwriteArchive | -overwriteArchive
         ///                  -stats | -nostats
         /// 
+        ///    -help             - Display verb-specific help
+        ///    -?
+        ///
         ///    -archive          - Archive file path
         ///    -a 
         ///    
-        ///    -source           - Source directory path
-        ///    -s
-        ///    
-        ///    -compressionLevel - Compres [rest of string was truncated]&quot;;.
+        ///    -source [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HelpZipDir {
             get {
@@ -409,7 +475,22 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ZipArchive zip file syntax:.
+        ///   Looks up a localized string similar to ZArcCLI zip file syntax: 
+        ///  ZArcCLI -ZipFile -help
+        ///                   -archive &lt;archive file path&gt; 
+        ///                   -entry &lt;archive entry relative path&gt;
+        ///                   -source &lt;source path &amp; file&gt; 
+        ///                   -compressionLevel &lt;Optimal |  Fastest | NoCompression&gt; 
+        ///                   -noOverwriteArchive | -overwriteArchive
+        ///                   -stats | -nostats
+        /// 
+        ///    -help             - Display verb-specific help
+        ///    -?
+        ///
+        ///    -archive          - Archive file path
+        ///    -a 
+        ///     
+        ///     [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HelpZipFile {
             get {
@@ -490,20 +571,20 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to -file.
+        ///   Looks up a localized string similar to -filter.
         /// </summary>
-        public static string KeyFile {
+        public static string KeyFilter {
             get {
-                return ResourceManager.GetString("KeyFile", resourceCulture);
+                return ResourceManager.GetString("KeyFilter", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to -f.
         /// </summary>
-        public static string KeyFile_ {
+        public static string KeyFilter_ {
             get {
-                return ResourceManager.GetString("KeyFile_", resourceCulture);
+                return ResourceManager.GetString("KeyFilter_", resourceCulture);
             }
         }
         
@@ -616,6 +697,15 @@ namespace PracTec.ZArc.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to -noregex.
+        /// </summary>
+        public static string KeyNoRegex {
+            get {
+                return ResourceManager.GetString("KeyNoRegex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to -noShort.
         /// </summary>
         public static string KeyNoShort {
@@ -684,6 +774,15 @@ namespace PracTec.ZArc.Properties {
         public static string KeyOverwriteTarget_ {
             get {
                 return ResourceManager.GetString("KeyOverwriteTarget_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to -regex.
+        /// </summary>
+        public static string KeyRegex {
+            get {
+                return ResourceManager.GetString("KeyRegex", resourceCulture);
             }
         }
         
